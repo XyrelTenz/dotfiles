@@ -9,7 +9,7 @@ return {
     views = {
       cmdline_popup = {
         position = {
-          row = "45%", -- slightly lower for aesthetic balance
+          row = "45%",
           col = "50%",
         },
         size = {
@@ -20,7 +20,7 @@ return {
           style = "rounded",
         },
         win_options = {
-          winblend = 15, -- makes it "glass" transparent
+          winblend = 15,
           winhighlight = table.concat({
             "Normal:NoiceCmdline",
             "FloatBorder:NoiceCmdBorder",
