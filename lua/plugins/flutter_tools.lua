@@ -49,13 +49,6 @@ return {
           completeFunctionCalls = true,
           renameFilesWithClasses = "prompt",
         },
-        -- Add this capabilities check to ensure colors load
-        on_attach = function(client, bufnr)
-          if client.server_capabilities.colorProvider then
-            -- Enable native colors
-            require("vim.lsp.document_color").buf_attach(bufnr)
-          end
-        end,
       },
     })
   end,
