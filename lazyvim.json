@@ -1,6 +1,7 @@
 {
   "extras": [
     "lazyvim.plugins.extras.coding.nvim-cmp",
+    "lazyvim.plugins.extras.editor.fzf",
     "lazyvim.plugins.extras.editor.mini-files",
     "lazyvim.plugins.extras.editor.mini-move",
     "lazyvim.plugins.extras.editor.neo-tree",
@@ -8,7 +9,9 @@
     "lazyvim.plugins.extras.lang.clangd",
     "lazyvim.plugins.extras.lang.dart",
     "lazyvim.plugins.extras.lang.docker",
+    "lazyvim.plugins.extras.lang.dotnet",
     "lazyvim.plugins.extras.lang.go",
+    "lazyvim.plugins.extras.lang.java",
     "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.vue",
