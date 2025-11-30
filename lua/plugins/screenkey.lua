@@ -15,8 +15,8 @@ return {
       },
     })
 
-    vim.schedule(function()
-      vim.cmd("Screenkey")
-    end)
+    -- vim.schedule(function()
+    --   vim.cmd("Screenkey")
+    -- end)
   end,
 }

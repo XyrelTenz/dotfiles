@@ -6,6 +6,7 @@ return {
       popup = {
         size = { height = "80%", width = "80%" },
         position = "50%",
+        border = "none",
       },
     },
   },
