@@ -38,7 +38,7 @@ end
 
 function M.setup()
   -- vim.cmd("colorscheme kanagawa-paper-ink")
-  vim.cmd("colorscheme NeoSolarized")
+  vim.cmd("colorscheme dark_flat")
 
   -- Apply transparency
   make_transparent()
