@@ -21,7 +21,7 @@ return {
         {
           icon = " ",
           desc = "Files",
-          action = "Telescope find_files",
+          action = " find_files",
           key = "f",
         },
         {
@@ -36,7 +36,7 @@ return {
           icon = " ",
           desc = "Recent",
           group = "Label",
-          action = "Telescope oldfiles",
+          action = " oldfiles",
           key = "r",
         },
         {
