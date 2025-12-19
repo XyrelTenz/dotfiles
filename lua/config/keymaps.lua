@@ -1,1 +1,1 @@
-vim.keymap.set({ "n", "t" }, "<leader>tt", "<cmd>FloatermToggle<CR>", { desc = "Toggle Floaterm" })
+vim.keymap.set({ "n", "t" }, "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Toggle Terminal" })
