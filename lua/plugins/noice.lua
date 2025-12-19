@@ -1,59 +1,45 @@
 return {
-  "folke/noice.nvim",
-  event = "VeryLazy",
-  opts = {
-    cmdline = {
-      view = "cmdline_popup",
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        config = function()
+            require("noice").setup({
+                lsp = {
+                    override = {
+                        ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+                        ["vim.lsp.util.stylize_markdown"] = true,
+                        ["cmp.entry.get_documentation"] = true,
+                    },
+                },
+                routes = {
+                    {
+                        filter = {
+                            event = "msg_show",
+                            any = {
+                                { find = "%d+L, %d+B" },
+                                { find = "; after #%d+" },
+                                { find = "; before #%d+" },
+                            },
+                        },
+                        opts = { skip = true },
+                    },
+                },
+                presets = {
+                    bottom_search = true,
+                    long_message_to_split = true,
+                    lsp_doc_border = true,
+                },
+                cmdline = {
+                    view = "cmdline",
+                },
+                views = {
+                    mini = {
+                        win_options = {
+                            winblend = 0,
+                        },
+                    },
+                },
+            })
+        end,
     },
-
-    views = {
-      cmdline_popup = {
-        position = {
-          row = "45%",
-          col = "50%",
-        },
-        size = {
-          width = 42,
-          height = "auto",
-        },
-        border = {
-          style = "rounded",
-        },
-        win_options = {
-          winblend = 15,
-          winhighlight = table.concat({
-            "Normal:NoiceCmdline",
-            "FloatBorder:NoiceCmdBorder",
-            "CursorLine:NoiceCmdCursorLine",
-          }, ","),
-        },
-      },
-    },
-
-    -- OPTIONAL: makes message UI also aesthetic
-    presets = {
-      command_palette = false,
-      bottom_search = false,
-      long_message_to_split = true,
-    },
-  },
-
-  config = function(_, opts)
-    require("noice").setup(opts)
-
-    -- 🌈 Custom aesthetic colors
-    vim.api.nvim_set_hl(0, "NoiceCmdline", {
-      bg = "#1a1b26", -- deep aesthetic night-theme background
-      fg = "#c0caf5",
-    })
-
-    vim.api.nvim_set_hl(0, "NoiceCmdBorder", {
-      fg = "#7aa2f7", -- soft blue border
-      bg = "#1a1b26",
-    })
-
-    vim.api.nvim_set_hl(0, "NoiceCmdCursorLine", {
-      bg = "#24283b", -- subtle highlight
-    })
-  end,
 }
