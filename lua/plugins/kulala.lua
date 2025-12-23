@@ -1,3 +1,4 @@
+-- TODO: Fixed the colors on HTTP
 return {
   "mistweaverco/kulala.nvim",
   lazy = false,

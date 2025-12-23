@@ -27,6 +27,7 @@ return {
         toml = { "taplo" },
         yaml = { "prettier" },
         prisma = { "prettier" },
+        dart = { "dart-ls" },
       },
 
       format_after_save = function()

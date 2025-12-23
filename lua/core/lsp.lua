@@ -29,4 +29,5 @@ vim.lsp.enable({
   "ts_ls",
   "yamlls",
   "prisma",
+  "ast-grep",
 })
