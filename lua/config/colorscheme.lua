@@ -41,9 +41,9 @@ function M.setup()
   -- vim.cmd("colorscheme kanagawa-paper-ink")
   -- vim.cmd("colorscheme dark_flat")
   -- vim.cmd("colorscheme NeoSolarized")
-  -- vim.cmd("colorscheme poimandres")
+  vim.cmd("colorscheme poimandres")
   -- vim.cmd("colorscheme darkvoid")
-  vim.cmd("colorscheme onedark")
+  -- vim.cmd("colorscheme onedark")
 
   -- Apply transparency
   make_transparent()

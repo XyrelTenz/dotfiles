@@ -1,5 +1,7 @@
 return {
   "mistweaverco/kulala.nvim",
+  lazy = false,
+  priority = 1000,
   keys = {
     {
       "<leader>Rs",
