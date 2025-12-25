@@ -1,4 +1,5 @@
 --- @type vim.lsp.Config
+--- HTML LSP
 return {
     cmd = { "vscode-html-language-server", "--stdio" },
     filetypes = { "html", "templ" },
