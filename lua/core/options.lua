@@ -3,7 +3,7 @@ vim.g.maplocalleader = " "
 vim.g.user = os.getenv("USERNAME") or os.getenv("USER")
 
 local opt = vim.opt
-opt.shell = "powershell"
+opt.shell = "fish"
 
 -- Set shell to PowerShell 7 if on Win32 or Win64
 if vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1 then
