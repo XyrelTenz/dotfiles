@@ -27,6 +27,7 @@ return {
         toml = { "taplo" },
         yaml = { "prettier" },
         prisma = { "prettier" },
+        cpp = { "clang-format" },
         dart = { "dart-ls" },
       },
 

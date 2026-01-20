@@ -30,5 +30,6 @@ vim.lsp.enable({
   "yamlls",
   "prisma",
   "ast-grep",
+  "cpp",
   "http",
 })
