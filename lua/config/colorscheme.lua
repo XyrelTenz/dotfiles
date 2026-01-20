@@ -43,10 +43,12 @@ function M.setup()
   -- vim.cmd("colorscheme NeoSolarized")
   -- vim.cmd("colorscheme poimandres")
   -- vim.cmd("colorscheme darkvoid")
-  vim.cmd("colorscheme onedark")
+  -- vim.cmd("colorscheme onedark")
   -- vim.cmd("colorscheme cyberdream")
   -- vim.cmd("colorscheme hybrid")
   -- vim.cmd("colorscheme nord")
+  vim.cmd("colorscheme everforest")
+  -- vim.cmd("colorscheme vscode")
 
   -- Apply transparency
   make_transparent()
