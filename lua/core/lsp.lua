@@ -32,4 +32,5 @@ vim.lsp.enable({
   "ast-grep",
   "cpp",
   "http",
+  -- "svelte",
 })
