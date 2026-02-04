@@ -9,6 +9,7 @@ return {
         vue = { "prettier" },
         javascriptreact = { "prettier" },
         typescriptreact = { "prettier" },
+        svelte = { "prettier" },
         css = { "prettier" },
         go = { "goimports_reviser", "gofmt" },
         html = { "prettier" },
