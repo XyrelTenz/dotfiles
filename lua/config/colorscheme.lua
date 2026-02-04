@@ -46,11 +46,11 @@ function M.setup()
   -- vim.cmd("colorscheme onedark")
   -- vim.cmd("colorscheme cyberdream")
   -- vim.cmd("colorscheme hybrid")
-  -- vim.cmd("colorscheme nord")
+  vim.cmd("colorscheme nord")
   -- vim.cmd("colorscheme everforest")
   -- vim.cmd("colorscheme vscode")
   -- vim.cmd("colorscheme bamboo")
-  vim.cmd("colorscheme mellow")
+  -- vim.cmd("colorscheme mellow")
 
   -- Apply transparency
   make_transparent()
