@@ -52,8 +52,8 @@ function M.setup()
   -- vim.cmd("colorscheme bamboo")
   -- vim.cmd("colorscheme mellow")
   -- vim.cmd("colorscheme boo")
-  vim.cmd("colorscheme everblush")
-  -- vim.cmd("colorscheme solarized-osaka")
+  -- vim.cmd("colorscheme everblush")
+  vim.cmd("colorscheme solarized-osaka")
 
   -- Apply transparency
   make_transparent()
