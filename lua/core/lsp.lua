@@ -23,6 +23,7 @@ vim.lsp.enable({
   "powershell_es",
   "rust_analyzer",
   "tailwindcss",
+  "tailwindcss-language-server",
   "taplo",
   "templ",
   "terraformls",
@@ -32,5 +33,5 @@ vim.lsp.enable({
   "ast-grep",
   "cpp",
   "http",
-  -- "svelte",
+  "svelte-language-server",
 })

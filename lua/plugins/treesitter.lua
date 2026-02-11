@@ -1,18 +1,17 @@
+---@type NvPluginSpec
 return {
   "nvim-treesitter/nvim-treesitter",
-  highlight = {
-    enable = true,
-  },
-  dependencies = {
-    "windwp/nvim-ts-autotag",
-  },
   opts = {
+    ensure_installed = {
+      "svelte",
+      "html",
+      "css",
+      "javascript",
+      "typescript",
+    },
     highlight = {
       enable = true,
       disable = { "prisma" },
-    },
-    autotag = {
-      enable = true,
     },
   },
 }
