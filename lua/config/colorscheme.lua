@@ -38,7 +38,7 @@ local function make_transparent()
 end
 
 function M.setup()
-  -- vim.cmd("colorscheme kanagawa-paper-ink")
+  vim.cmd("colorscheme kanagawa-paper-ink")
   -- vim.cmd("colorscheme dark_flat")
   -- vim.cmd("colorscheme NeoSolarized")
   -- vim.cmd("colorscheme poimandres")
@@ -53,7 +53,7 @@ function M.setup()
   -- vim.cmd("colorscheme mellow")
   -- vim.cmd("colorscheme boo")
   -- vim.cmd("colorscheme everblush")
-  vim.cmd("colorscheme solarized-osaka")
+  -- vim.cmd("colorscheme solarized-osaka")
 
   -- Apply transparency
   make_transparent()
