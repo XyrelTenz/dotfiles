@@ -45,6 +45,8 @@ return {
       "templ",
       "terraform-ls",
       "typescript-language-server",
+      "vue-language-server",
+      "svelte-language-server",
       "yaml-language-server",
     }
 
