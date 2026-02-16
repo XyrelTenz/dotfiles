@@ -1,4 +1,3 @@
----@type NvPluginSpec
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
@@ -11,7 +10,7 @@ return {
     },
     highlight = {
       enable = true,
-      disable = { "prisma" },
+      -- disable = { "prisma" },
     },
   },
 }

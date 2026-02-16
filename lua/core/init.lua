@@ -1,5 +1,3 @@
-vim.g.deprecation_warnings = false
-
 require("core.options")
 require("core.autocmds")
 require("core.utils")

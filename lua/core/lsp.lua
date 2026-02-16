@@ -33,5 +33,6 @@ vim.lsp.enable({
   "ast-grep",
   "cpp",
   "http",
-  "svelte-language-server",
+  -- "svelte-language-server",
+  -- "vue-language-server",
 })
