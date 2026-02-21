@@ -24,3 +24,9 @@ vim.api.nvim_create_user_command("Live", function()
   })
   print("Starting Live Server...")
 end, {})
+
+--- Hide Line Numbers
+vim.o.number = false
+vim.o.relativenumber = false
+--- Hide Vertical Split Line
+vim.opt.fillchars:append({ vert = " " })
