@@ -6,7 +6,7 @@ return {
 
   --  INFO: Keymaps
   keys = {
-    { "<leader>er", "<Cmd>Neotree toggle<CR>", desc = "Explorer Neotree" },
+    { "<leader>er", "<Cmd>Neotree toggle reveal<CR>", desc = "Explorer Neotree" },
   },
 
   --  INFO: Config
@@ -15,6 +15,8 @@ return {
     popup_border_style = "rounded",
     enable_cursor_hijack = true,
     hide_root_node = true,
+    hide_by_name = true,
+    title = false,
 
     sources = {
       "filesystem",
@@ -23,8 +25,9 @@ return {
     },
 
     window = {
-      position = "left",
-      width = 40,
+      position = "float",
+      width = 150,
+      title = "",
 
       -- INFO: Keymaps
       mappings = {
@@ -37,7 +40,6 @@ return {
           config = {
             use_float = true,
             use_image_nvim = true,
-            title = "󰍹 Quick Preview",
           },
         },
         ["<C-b>"] = { "scroll_preview", config = { direction = -10 } },
@@ -61,8 +63,8 @@ return {
     },
 
     filesystem = {
-      bind_to_cwd = false,
-      follow_current_file = { enabled = true },
+      bind_to_cwd = true,
+      follow_current_file = { enabled = false, leave_dirs_open = false },
       filtered_items = {
         visible = false,
         hide_dotfiles = true,
@@ -151,13 +153,13 @@ return {
           staged = "",
           conflict = "",
         },
-        align = "left",
+        align = "float",
       },
 
       -- INFO: Indent
       indent = {
-        indent_size = 2,
-        padding = 2,
+        indent_size = 3,
+        padding = 0,
         with_markers = true,
         indent_marker = "│",
         last_indent_marker = "└",
