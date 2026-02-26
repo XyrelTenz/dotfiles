@@ -4,6 +4,18 @@ return {
   branch = "v3.x",
   event = "VeryLazy",
 
+  -- INFO: Dependencies
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "MunifTanjim/nui.nvim",
+    {
+      "DaikyXendo/nvim-material-icon",
+      config = function()
+        require("nvim-web-devicons").setup()
+      end,
+    },
+  },
+
   --  INFO: Keymaps
   keys = {
     { "<leader>er", "<Cmd>Neotree toggle reveal<CR>", desc = "Explorer Neotree" },
@@ -28,8 +40,6 @@ return {
       position = "float",
       width = 150,
       title = "",
-
-      -- INFO: Keymaps
       mappings = {
         ["l"] = "open",
         ["h"] = "close_node",
@@ -37,17 +47,13 @@ return {
         ["A"] = "add_directory",
         ["P"] = {
           "toggle_preview",
-          config = {
-            use_float = true,
-            use_image_nvim = true,
-          },
+          config = { use_float = true, use_image_nvim = true },
         },
         ["<C-b>"] = { "scroll_preview", config = { direction = -10 } },
         ["<C-f>"] = { "scroll_preview", config = { direction = 10 } },
       },
     },
 
-    -- INFO: Showing reletive numbers
     event_handlers = {
       {
         event = "neo_tree_buffer_enter",
@@ -56,8 +62,6 @@ return {
           vim.opt_local.relativenumber = false
           vim.opt_local.signcolumn = "no"
           vim.opt_local.foldcolumn = "0"
-          -- vim.opt_local.winhighlight =
-          -- 	"LineNr:NeoTreeNormal,CursorLineNr:NeoTreeCursorLineNr,SignColumn:NeoTreeSignColumn"
         end,
       },
     },
@@ -70,40 +74,21 @@ return {
         hide_dotfiles = true,
         hide_gitignored = false,
         hide_hidden = true,
-        hide_by_name = {
-          "node_modules",
-        },
-        hide_by_pattern = {
-          --"*.meta",
-          --"*/src/*/tsconfig.json",
-        },
-        always_show = {
-          "dist",
-        },
-        always_show_by_pattern = {
-          --".env*",
-        },
-        never_show = {
-          --".DS_Store",
-          --"thumbs.db"
-        },
-        never_show_by_pattern = {
-          --".null-ls_*",
-        },
+        hide_by_name = { "node_modules" },
+        hide_by_pattern = {},
+        always_show = { "dist" },
+        always_show_by_pattern = {},
+        never_show = {},
+        never_show_by_pattern = {},
       },
-
-      -- INFO: Custom delete command for trash cli
       commands = {
         delete = function(state)
           local node = state.tree:get_node()
           local inputs = require("neo-tree.ui.inputs")
-
           inputs.confirm("Are you sure you want to trash " .. node.name .. "?", function(confirmed)
             if not confirmed then
               return
             end
-
-            -- Use trash-put from trash-cli
             vim.fn.system({ "trash-put", vim.fn.fnameescape(node.path) })
             require("neo-tree.sources.manager").refresh(state.name)
           end)
@@ -112,7 +97,6 @@ return {
     },
 
     default_component_configs = {
-
       -- INFO: Icons
       icon = {
         folder_closed = "",
@@ -121,18 +105,9 @@ return {
         folder_empty_open = "",
         default = "*",
         highlight = "NeoTreeFileIcon",
+        -- The custom `provider` function has been removed!
+        -- Neo-tree will automatically use nvim-web-devicons now.
       },
-      provider = function(icon, node, state)
-        if node.type == "file" or node.type == "terminal" then
-          local success, web_devicons = pcall(require, "nvim-web-devicons")
-          local name = node.type == "terminal" and "terminal" or node.name
-          if success then
-            local devicon, hl = web_devicons.get_icon(name)
-            icon.text = devicon or icon.text
-            icon.highlight = hl or icon.highlight
-          end
-        end
-      end,
 
       modified = {
         symbol = "",
@@ -141,12 +116,10 @@ return {
 
       git_status = {
         symbols = {
-          -- Change type
           added = "✚",
           deleted = "✖",
           modified = "",
           renamed = "󰁕",
-          -- Status type
           untracked = "",
           ignored = "",
           unstaged = "",
@@ -156,7 +129,6 @@ return {
         align = "float",
       },
 
-      -- INFO: Indent
       indent = {
         indent_size = 3,
         padding = 0,
@@ -178,17 +150,9 @@ return {
         {
           "container",
           content = {
-            {
-              "name",
-              zindex = 10,
-            },
-            {
-              "symlink_target",
-              zindex = 10,
-              highlight = "NeoTreeSymbolicLinkTarget",
-            },
+            { "name", zindex = 10 },
+            { "symlink_target", zindex = 10, highlight = "NeoTreeSymbolicLinkTarget" },
             { "modified", zindex = 20, align = "right" },
-            -- { "diagnostics", zindex = 20, align = "right" },
             { "clipboard", zindex = 10 },
             { "bufnr", zindex = 10 },
             { "git_status", zindex = 10, align = "right" },

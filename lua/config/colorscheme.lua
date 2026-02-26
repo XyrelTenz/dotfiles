@@ -54,6 +54,7 @@ function M.setup()
   -- vim.cmd("colorscheme boo")
   -- vim.cmd("colorscheme everblush")
   -- vim.cmd("colorscheme solarized-osaka")
+  -- vim.cmd("colorscheme sherbet")
 
   -- Apply transparency
   make_transparent()
