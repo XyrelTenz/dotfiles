@@ -10,7 +10,7 @@ return {
         "grug-far",
       }
       return not vim.tbl_contains(disabled_ft, vim.bo.filetype)
-        and vim.b.completion ~= false
+        and vim.b.completion ~= true
         and vim.bo.buftype ~= "prompt"
     end
 

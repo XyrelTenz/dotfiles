@@ -29,6 +29,9 @@ local groups = {
   "TabLineSel",
   "TabLineFill",
   "EndOfBuffer",
+  "NeoTreeNormal",
+  "NeoTreeNormalINC",
+  "NeoTreeWinSeparator",
 }
 
 local function make_transparent()

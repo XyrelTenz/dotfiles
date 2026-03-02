@@ -32,11 +32,12 @@ opt.scrolloff = 12
 opt.wrap = true
 opt.linebreak = true
 opt.spelllang = "en_nz"
-opt.showtabline = 0
+opt.showtabline = 2
 
 -- Set statusline
-opt.laststatus = 3
-opt.statusline = require("core.statusline").statusline
+opt.laststatus = 0
+-- opt.statusline = require("core.statusline").statusline
+opt.tabline = require("core.statusline").statusline
 
 -- Set tab width
 opt.tabstop = 4
