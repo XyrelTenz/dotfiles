@@ -10,13 +10,15 @@ return {
         "grug-far",
       }
       return not vim.tbl_contains(disabled_ft, vim.bo.filetype)
-        and vim.b.completion ~= true
+        -- and vim.b.completion ~= true
+        and vim.b.completion ~= false
         and vim.bo.buftype ~= "prompt"
     end
 
     require("blink.cmp").setup({
       enabled = is_enabled,
-      cmdline = { completion = { menu = { auto_show = true } } },
+      -- cmdline = { completion = { menu = { auto_show = true } } },
+      cmdline = { completion = { menu = { auto_show = false } } },
       completion = {
         menu = {
           scrollbar = false,

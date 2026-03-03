@@ -30,8 +30,9 @@ return {
         prisma = { "prettier" },
         cpp = { "clang-format" },
         dart = { "dart-ls" },
-        erb = { "erb-format" },
-        eruby = { "erb-format" },
+        erb = { "htmlbeautifier" },
+        eruby = { "htmlbeautifier" },
+        ruby = { "rubyfmt" },
       },
 
       format_after_save = function()
