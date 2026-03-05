@@ -81,6 +81,7 @@ map("n", "<leader><leader>", function() snacks.picker.smart() end, { desc = "Sma
 map("n", "<leader>ff", function() snacks.picker.files({ hidden = true }) end, { desc = "Fuzzy find files" })
 map("n", "<leader>fr", function() snacks.picker.recent() end, { desc = "Fuzzy find recent files" })
 map("n", "<leader>fs", function() snacks.picker.grep() end, { desc = "Find string in CWD" })
+map("n", "<leader>fg", function() Snacks.picker.grep() end, { desc = "Live Grep" })
 map("n", "<leader>fc", function() snacks.picker.grep_word() end, { desc = "Find word under cursor in CWD" })
 map("n", "<leader>fb", function() snacks.picker.buffers({ layout = { preset = "select" }}) end, { desc = "Fuzzy find buffers" })
 map("n", "<leader>ft", function() snacks.picker() end, { desc = "Other pickers..." })

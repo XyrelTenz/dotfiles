@@ -4,6 +4,7 @@
   "bamboo.nvim": { "branch": "master", "commit": "1309bc88bffcf1bedc3e84e7fa9004de93da774a" },
   "blink.cmp": { "branch": "main", "commit": "4b18c32adef2898f95cdef6192cbd5796c1a332d" },
   "bluloco.nvim": { "branch": "main", "commit": "ca548a50c1c9ccbb3f730c6144a55d48017a07c6" },
+  "boat.vim": { "branch": "main", "commit": "263850f569c1186654da84ec1b55a5403c5f2f31" },
   "boo-colorscheme-nvim": { "branch": "main", "commit": "36a52f900f49fe78bfeb30d2519a8dd356bf8fc1" },
   "commentless.nvim": { "branch": "main", "commit": "67263e1973276fb6f8f089b815d0f69fc50673b1" },
   "conform.nvim": { "branch": "master", "commit": "40dcec5555f960b0a04340d76eabdf4efe78599d" },

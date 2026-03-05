@@ -24,6 +24,24 @@ return {
         },
       },
       picker = {
+        layout = {
+          preset = "dropdown",
+          layout = {
+            width = 0.8,
+            height = 0.8,
+          },
+        },
+        win = {
+          input = {
+            border = "rounded",
+          },
+          list = {
+            border = "rounded",
+          },
+          preview = {
+            border = "rounded",
+          },
+        },
         formatters = {
           file = {
             filename_first = true,
