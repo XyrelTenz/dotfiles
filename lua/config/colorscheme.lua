@@ -59,7 +59,8 @@ function M.setup()
   -- vim.cmd("colorscheme solarized-osaka")
   -- vim.cmd("colorscheme sherbet")
   -- vim.cmd("colorscheme vague")
-  vim.cmd("colorscheme tairiki")
+  -- vim.cmd("colorscheme tairiki")
+  vim.cmd("colorscheme myrrh")
 
   -- Apply transparency
   make_transparent()
