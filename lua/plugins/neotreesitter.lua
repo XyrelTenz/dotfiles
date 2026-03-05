@@ -3,6 +3,9 @@ return {
   branch = "v3.x",
   dependencies = {
     "saifulapm/neotree-file-nesting-config",
+    "nvim-tree/nvim-web-devicons",
+    "nvim-lua/plenary.nvim",
+    "MunifTanjim/nui.nvim",
   },
   keys = {
     { "<leader>er", "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
