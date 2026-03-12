@@ -33,7 +33,7 @@ return {
         erb = { "htmlbeautifier" },
         eruby = { "htmlbeautifier" },
         ruby = { "rubyfmt" },
-        kt = { "ktlint" },
+        kotlin = { "ktlint" },
       },
 
       format_after_save = function()
