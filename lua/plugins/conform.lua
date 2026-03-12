@@ -44,7 +44,7 @@ return {
             vim.lsp.buf.format()
             return
           end
-          return { lsp_format = "fallback", lsp_fallback = true }
+          return { lsp_format = "fallback", lsp_fallback = true, timeout_ms = 2000 }
         end
       end,
 

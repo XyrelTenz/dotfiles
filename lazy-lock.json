@@ -1,5 +1,6 @@
 {
   "NeoSolarized.nvim": { "branch": "master", "commit": "3c55ad358c062aa4879950c4f83b4deeac6b72df" },
+  "android-nvim-plugin": { "branch": "main", "commit": "179fd052e94c917129b3d07d51f7f284397c0cb5" },
   "angelic.nvim": { "branch": "main", "commit": "44dbe8438f579acedab5d1a7288a9a1f67d71531" },
   "bamboo.nvim": { "branch": "master", "commit": "1309bc88bffcf1bedc3e84e7fa9004de93da774a" },
   "blink.cmp": { "branch": "main", "commit": "4b18c32adef2898f95cdef6192cbd5796c1a332d" },
