@@ -36,5 +36,6 @@ vim.lsp.enable({
   "ruby-lsp",
   -- "svelte-language-server",
   "vue-language-server",
-  "kotlin-language-server",
+  -- "kotlin-language-server",
+  "kotlin-lsp",
 })
