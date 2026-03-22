@@ -1,7 +1,4 @@
-vim.g.deprecation_warnings = false
--- vim.lsp.buf_get_clients = function(bufnr)
---   return vim.lsp.get_clients({ bufnr = bufnr or 0 })
--- end
+vim.g.depcration_warnings = false
 require("core")
 require("config.colorscheme").setup()
 require("nvim-ts-autotag").setup()

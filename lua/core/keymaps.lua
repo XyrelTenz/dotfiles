@@ -159,6 +159,20 @@ map("n", "gI", function() snacks.picker.lsp_implementations() end, { desc = "Got
 map("n", "gd", function() snacks.picker.lsp_definitions() end, { desc = "Goto Definitions" })
 map("n", "gy", function() snacks.picker.lsp_type_definitions() end, { desc = "Goto Type Definitions" })
 
+
+-- Fluter
+map("n", "<leader>rr", "<cmd>FlutterRun<cr>", { desc = "Flutter Run" })
+map("n", "<leader>rd", "<cmd>FlutterDebug<cr>", { desc = "Flutter Debug" })
+map("n", "<leader>re", "<cmd>FlutterEmulators<cr>", { desc = "Flutter Emulators" })
+map("n", "<leader>rv", "<cmd>FlutterDevices<cr>", { desc = "Flutter Devices" })
+map("n", "<leader>rl", "<cmd>FlutterReload<cr>", { desc = "Hot Reload" })
+map("n", "<leader>rR", "<cmd>FlutterRestart<cr>", { desc = "Hot Restart" })
+map("n", "<leader>rq", "<cmd>FlutterQuit<cr>", { desc = "Quit Flutter" })
+map("n", "<leader>ro", "<cmd>FlutterOutlineToggle<cr>", { desc = "Flutter Outline" })
+map("n", "<leader>rL", "<cmd>FlutterLogToggle<cr>", { desc = "Flutter Log" })
+map("n", "<leader>rc", "<cmd>FlutterLogClear<cr>", { desc = "Clear Flutter Log" })
+map("n", "<leader>ra", "<cmd>FlutterAttach<cr>", { desc = "Attach to App" })
+map("n", "<leader>rt", "<cmd>FlutterDevTools<cr>", { desc = "Flutter DevTools" })
 -- Terminal/Run...
 map({"n", "t"}, "<C-\\>", function() snacks.terminal() end, { desc = "Toggle Terminal" })
 map("n", "<leader>gg", function() snacks.lazygit() end, { desc = "Lazygit" })

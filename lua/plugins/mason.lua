@@ -48,6 +48,7 @@ return {
       "vue-language-server",
       "svelte-language-server",
       "yaml-language-server",
+      "swiftformat",
     }
 
     if vim.fn.has("unix") == 1 then

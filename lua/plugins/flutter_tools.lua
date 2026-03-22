@@ -9,7 +9,8 @@ return {
     require("flutter-tools").setup({
       ui = {
         border = "rounded",
-        notification_style = "native",
+        -- notification_style = "native",
+        notification_style = "nvim-notify",
       },
       decorations = {
         statusline = {
@@ -29,25 +30,28 @@ return {
         prefix = "//",
         enabled = true,
       },
+      fvm = true,
       dev_log = {
         enabled = false,
         open_cmd = "15split",
       },
       outline = {
         auto_open = false,
+        width = 100,
       },
       dev_tools = {
         autostart = false,
         auto_open_browser = false,
       },
-      flutter_run_args = {
-        "--offline",
-      },
+      -- flutter_run_args = {
+      --   "--offline",
+      -- },
       lsp = {
         settings = {
           showTodos = true,
           completeFunctionCalls = true,
           renameFilesWithClasses = "prompt",
+          updateImportsOnRename = true,
         },
       },
     })

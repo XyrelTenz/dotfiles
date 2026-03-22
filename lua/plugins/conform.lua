@@ -1,5 +1,6 @@
 return {
   "stevearc/conform.nvim",
+  lazy = false,
   event = "BufReadPre",
   config = function()
     vim.g.autoformat = true
@@ -34,6 +35,7 @@ return {
         eruby = { "htmlbeautifier" },
         ruby = { "rubyfmt" },
         kotlin = { "ktfmt" },
+        swift = { "swiftformat" },
       },
 
       format_after_save = function()
