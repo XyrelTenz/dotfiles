@@ -1,4 +1,10 @@
-# 💤 LazyVim
+⚠️ Status: Deprecated
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+    [!IMPORTANT]
+    This configuration is no longer maintained. I have moved on to a different setup, and this repository will not receive any further updates, bug fixes, or plugin migrations.
+
+🚀 New Configuration
+
+If you're looking for my current, up-to-date Neovim environment, please check out my new repository here:
+
+    https://github.com/XyrelTenz/nvim
